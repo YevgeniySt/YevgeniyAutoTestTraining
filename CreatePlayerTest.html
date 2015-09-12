@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://193.138.245.222:81/" />
+<title>CreatePlayerTest</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">CreatePlayerTest</td></tr>
+</thead><tbody>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Insert</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>javascript{(&quot;UN&quot;+((new Date().getMonth()) +1)+(new Date().getDate().toString())+new Date().getHours() + new Date().getMinutes() + new Date().getSeconds())}</td>
+	<td>UserName</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${UserName}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Password</td>
+	<td>Password1</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Number</td>
+	<td>12345</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=ff14642ac1c__us_login</td>
+	<td>${UserName}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=ff14642ac1c__us_email</td>
+	<td>${UserName}@gmail.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=ff14642ac1c__us_password</td>
+	<td>${Password1}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=ff14642ac1c__confirm_password</td>
+	<td>${Password1}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=ff14642ac1c__us_phone</td>
+	<td>${Number}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=button_save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=723a925886__login</td>
+	<td>${UserName}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@value='Search']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//img[@title='Edit']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>//input[@id='ff14642ac1c__us_login']</td>
+	<td>${UserName}</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>css=input#ff14642ac1c__us_email</td>
+	<td>${UserName}@gmail.com</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>css=input#ff14642ac1c__us_phone</td>
+	<td>${Number}</td>
+</tr>
+<tr>
+	<td>verifyChecked</td>
+	<td>css=input#ff14642ac1c__payment_chat_enabled</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifySelectedLabel</td>
+	<td>css=select#ff14642ac1c__us_gender</td>
+	<td>Male</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=td:contains('Real Money')+td</td>
+	<td>$0.00</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=td:contains('Fun Money')+td</td>
+	<td>1,000.00</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=td:contains('Bonus Dollars')+td</td>
+	<td>$0.00</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>xpath=//table/tbody/tr[2]/td/table/tbody/tr[5]/td[2]</td>
+	<td>0.00 LP</td>
+</tr>
+
+</tbody></table>
+</body>
+</html>
